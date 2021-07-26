@@ -1,0 +1,265 @@
+header {
+  background-color: #000;
+  border: 2px solid  #3a0863;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index:2;
+}
+
+.songs {
+  position: fixed;
+  height: 100%;
+  right: 0;
+  top: 25%;
+  width: 20%; 
+  z-index:2;
+
+}
+
+.translation {
+  color: rgb(99, 99, 99)
+}
+
+body {
+  background-color: rgb(189, 183, 202)
+}
+
+.left-a-little{
+  
+  width: 75%;
+  display: block;
+  margin-left: 10%;
+  margin-right: 15%;
+  padding: 10px 10px;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.column .main-column{
+
+  flex:2;
+  max-width: 50%;
+
+}
+
+.column .less-column{
+  flex: 1;
+  max-width:25%;
+  margin-right: 10%;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 85%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-right: 15%;
+  margin-top: 10px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible .active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible .active{
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-right: 15%;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 180px;
+  background-color: black;
+  color: #fff;
+  padding: 9px 9px;
+  border-radius: 6px;
+  top: -5px;
+  left: 105%;
+  text-align: left;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 10px; /*adjust height of arrow */
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+ul {
+  margin: 0;
+  padding: 8px;
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+  font-family: Cambria;
+  }
+
+li a {
+  display: inline;
+  padding: 8px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color .3s ease-in 10ms;
+}
+
+li a:hover {
+  background-color: #444349d7
+}
+
+.active {
+  background-color: #3a0863;
+}
+
+.songs ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+    border: 2px solid #3a0863;
+}
+
+.songs li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.songs li a:hover {
+  background-color: #3a0863;
+  color: white;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Arial;
+  font-size: 70px;
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px ;
+
+}
+h2 {
+  color: rgb(36, 25, 77);
+  font-family: Playfair-Display;
+  font-size: 28px;
+    padding: 10px;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 18px;
+}
+
+.intro{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+  background-color: rgb(131, 87, 172);
+      border-radius: 5px;
+  border: 2px solid #3a0863;
+}
+
+.middle{
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 10px;
+
+}
+
+.socials{
+    z-index: 1;
+/*or fixed*/
+    right: 0px;
+
+    padding: 1% 1%;
+    background-color: rgb(131, 87, 172);
+    border-radius: 5px;
+  border: 2px solid #3a0863;
+  color: #200929d7;
+
+}
+
+
+
+.socials a{
+  color: rgb(222, 250, 245);
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+iframe .center{
+  width: 80%;
+}
+
